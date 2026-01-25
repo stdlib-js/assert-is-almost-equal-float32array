@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-20)
+## Unreleased (2026-01-25)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`6e21629`](https://github.com/stdlib-js/stdlib/commit/6e21629c4064ea16b800fa43138c6c70debc0039) - **bench:** refactor to use string interpolation in `assert/is-almost-equal-float32array` [(#9877)](https://github.com/stdlib-js/stdlib/pull/9877) _(by Sagar Ratna Chaudhary)_
 -   [`be12cf9`](https://github.com/stdlib-js/stdlib/commit/be12cf90444b3999e47eaae62a35d82117957eeb) - **feat:** add `assert/is-almost-equal-float32array` [(#7682)](https://github.com/stdlib-js/stdlib/pull/7682) _(by Karan Anand)_
 
 </details>
@@ -34,9 +35,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Karan Anand
+-   Sagar Ratna Chaudhary
 
 </section>
 
