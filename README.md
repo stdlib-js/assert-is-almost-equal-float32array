@@ -35,14 +35,32 @@ limitations under the License.
 
 > Test if two arguments are both [Float32Arrays][@stdlib/array/float32] and contain respective elements which are [approximately equal][@stdlib/assert/is-almost-equal] within a specified number of ULPs (units in the last place).
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-almost-equal-float32array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isAlmostEqualFloat32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-almost-equal-float32array@esm/index.mjs';
+var isAlmostEqualFloat32Array = require( '@stdlib/assert-is-almost-equal-float32array' );
 ```
 
 #### isAlmostEqualFloat32Array( v1, v2, maxULP )
@@ -50,8 +68,8 @@ import isAlmostEqualFloat32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ass
 Tests if two arguments are both [Float32Arrays][@stdlib/array/float32] and contain respective elements which are [approximately equal][@stdlib/assert/is-almost-equal] within a specified number of ULPs (units in the last place).
 
 ```javascript
-import EPS from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float32-eps@esm/index.mjs';
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
+var EPS = require( '@stdlib/constants-float32-eps' );
+var Float32Array = require( '@stdlib/array-float32' );
 
 var x = new Float32Array( [ 1.0, 2.0 ] );
 var y = new Float32Array( [ 1.0+EPS, 2.0 ] );
@@ -87,14 +105,9 @@ bool = isAlmostEqualFloat32Array( x, [ 1.0, 2.0 ], 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
-import isAlmostEqualFloat32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-almost-equal-float32array@esm/index.mjs';
+```javascript
+var Float32Array = require( '@stdlib/array-float32' );
+var isAlmostEqualFloat32Array = require( '@stdlib/assert-is-almost-equal-float32array' );
 
 var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
@@ -110,10 +123,6 @@ x = new Float32Array( [ NaN, NaN, NaN ] );
 y = new Float32Array( [ NaN, NaN, NaN ] );
 out = isAlmostEqualFloat32Array( x, y, 0 );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -137,7 +146,7 @@ out = isAlmostEqualFloat32Array( x, y, 0 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -154,7 +163,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -180,8 +189,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -200,9 +209,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-almost-equal-float32array/main/LICENSE
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/esm
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
 
-[@stdlib/assert/is-almost-equal]: https://github.com/stdlib-js/assert-is-almost-equal/tree/esm
+[@stdlib/assert/is-almost-equal]: https://github.com/stdlib-js/assert-is-almost-equal
 
 </section>
 
