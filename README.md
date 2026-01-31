@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isAlmostEqualFloat32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-almost-equal-float32array@esm/index.mjs';
+import isAlmostEqualFloat32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-almost-equal-float32array@v0.1.0-esm/index.mjs';
 ```
 
 #### isAlmostEqualFloat32Array( v1, v2, maxULP )
@@ -94,7 +94,7 @@ bool = isAlmostEqualFloat32Array( x, [ 1.0, 2.0 ], 1 );
 <script type="module">
 
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
-import isAlmostEqualFloat32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-almost-equal-float32array@esm/index.mjs';
+import isAlmostEqualFloat32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-almost-equal-float32array@v0.1.0-esm/index.mjs';
 
 var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
